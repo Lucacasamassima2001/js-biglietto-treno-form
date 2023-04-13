@@ -39,6 +39,8 @@ const prezzo = numeric_km * price_per_km
 let sconto_20 = (prezzo - (prezzo * 20) / 100).toFixed(2);
 let sconto_40 = (prezzo - (prezzo * 40) / 100).toFixed(2);
 
+// GENERATE BUTTON
+
 const btn = document.querySelector(".genera")
 btn.addEventListener("click" , function(){
     let nome = document.querySelector(".name").value
@@ -47,11 +49,11 @@ btn.addEventListener("click" , function(){
 
     let numeric_km = document.querySelector(".km").value
     console.log(numeric_km)
-
     let age = document.querySelector(".età").value
-    console.log(age)
 
-    if(age < 18){
+    
+
+    if(age == "junior"){
         const price_per_km = 0.21
         const prezzo = numeric_km * price_per_km
         let sconto_20 = (prezzo - (prezzo * 20) / 100).toFixed(2);
@@ -61,7 +63,7 @@ btn.addEventListener("click" , function(){
         document.getElementById("cabin").innerHTML = cabina
         let code = Math.floor((Math.random() * 10000) + 1);
         document.getElementById("codice").innerHTML = code
-    }else if (age > 65){
+    }if (age == "elder"){
         const price_per_km = 0.21
         const prezzo = numeric_km * price_per_km
         let sconto_40 = (prezzo - (prezzo * 40) / 100).toFixed(2);
@@ -71,7 +73,7 @@ btn.addEventListener("click" , function(){
         document.getElementById("cabin").innerHTML = cabina
         let code = Math.floor((Math.random() * 10000) + 1);
         document.getElementById("codice").innerHTML = code
-    }else{
+    }if(age == "adult"){
         const price_per_km = 0.21
         const prezzo = numeric_km * price_per_km
         document.getElementById("price").innerHTML = prezzo + " &euro;"
@@ -83,6 +85,8 @@ btn.addEventListener("click" , function(){
     }
 }
 )
+
+// GO BACK BUTTON
 
 const btnback = document.querySelector(".annulla")
 btnback.addEventListener("click" , function(){
