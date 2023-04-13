@@ -84,3 +84,12 @@ btn.addEventListener("click" , function(){
 }
 )
 
+const btnback = document.querySelector(".annulla")
+btnback.addEventListener("click" , function(){
+    document.getElementById("showname").innerHTML = ""
+    document.getElementById("price").innerHTML = ""
+    document.getElementById("offerta").innerHTML = "" 
+    document.getElementById("cabin").innerHTML = ""
+    document.getElementById("codice").innerHTML = ""
+}
+)
