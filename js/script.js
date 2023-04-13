@@ -57,19 +57,30 @@ btn.addEventListener("click" , function(){
         let sconto_20 = (prezzo - (prezzo * 20) / 100).toFixed(2);
         document.getElementById("price").innerHTML = sconto_20 + " &euro;"
         document.getElementById("offerta").innerHTML = "Sconto minori"
+        let cabina = Math.floor((Math.random() * 10) + 1);
+        document.getElementById("cabin").innerHTML = cabina
+        let code = Math.floor((Math.random() * 10000) + 1);
+        document.getElementById("codice").innerHTML = code
     }else if (age > 65){
         const price_per_km = 0.21
         const prezzo = numeric_km * price_per_km
         let sconto_40 = (prezzo - (prezzo * 40) / 100).toFixed(2);
         document.getElementById("price").innerHTML = sconto_40 + " &euro;"
         document.getElementById("offerta").innerHTML = "Sconto over 65"
+        let cabina = Math.floor((Math.random() * 10) + 1);
+        document.getElementById("cabin").innerHTML = cabina
+        let code = Math.floor((Math.random() * 10000) + 1);
+        document.getElementById("codice").innerHTML = code
     }else{
         const price_per_km = 0.21
         const prezzo = numeric_km * price_per_km
         document.getElementById("price").innerHTML = prezzo + " &euro;"
         document.getElementById("offerta").innerHTML = "Tariffa Standard"
+        let cabina = Math.floor((Math.random() * 10) + 1);
+        document.getElementById("cabin").innerHTML = cabina
+        let code = Math.floor((Math.random() * 10000) + 1);
+        document.getElementById("codice").innerHTML = code
     }
 }
-
-
 )
+

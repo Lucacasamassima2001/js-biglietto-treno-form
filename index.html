@@ -10,14 +10,68 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <input class="name" type="text">
-    <input class="km" type="text">
-    <input class="età" type="text">
+    <div class="container">
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div class="card">
+            <div class="infos">
+                <div class="info">
+                    <label>Nome e Cognome</label>
+                    <input class="name" type="text">
+                </div>
+                <div class="info">
+                    <label>Km da percorrere</label>
+                    <input class="km" type="text">
+                </div>
+                <div class="info">
+                    <label>Età</label>
+                    <input class="età" type="text">
+                </div>
+            </div>
+            
+            <div class="btns">
+                <button class="genera">Genera</button>
+                <button class="annulla">Annulla</button>
+            </div>
+        </div>
+        <h1>IL TUO BIGLIETTO</h1>
+        <div class="card">
+            <h2>DETTAGLIO PASSEGGERI</h2>
+            <div class="passenger-info">
+                <div class="passenger-spec-name">
+                    <div class="distance">NOME PASSEGGERO</div>
+                    <div>
+                        <span id="showname"></span>
+                    </div>
+                </div>
+                <div class="passenger-spec">
+                    <div class="distance">Offerta</div>
+                    <div>
+                        <span id="offerta"></span>
+                    </div>
+                </div>
+                <div class="passenger-spec">
+                    <div class="distance">Carrozza</div>
+                    <div>
+                        <span id="cabin"></span>
+                    </div>
+                </div>
+                <div class="passenger-spec">
+                    <div class="distance">Codice CP</div>
+                    <div>
+                        <span id="codice"></span>
+                    </div>
+                </div>
+                <div class="passenger-spec">
+                    <div class="distance">Costo Biglietto</div>
+                    <div>
+                        <span id="price"></span>
+                    </div>
+                </div>
 
-    <button class="genera">Genera</button>
-    <span id="showname"></span>
-    <span id="price"></span>
-    <span id="offerta"></span>
-    
+            </div>
+        </div>
+        
+    </div>
+
 </body>
 </html>

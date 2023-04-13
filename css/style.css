@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgba(185,20,80,255);
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.card{
+    margin: auto;
+    margin-top: 50px;
+    padding: 1em;
+    width: 900px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 black;
+}
+
+.infos{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3em;
+}
+
+.info{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+label{
+    margin-bottom: 1em;
+    color: rgba(185,20,80,255);
+    font-size: 1.3em;
+}
+
+input{
+    border: 2px solid rgba(185,20,80,255);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.btns{
+    width: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    font-size: 1.2em;
+    padding: .3em;
+    color: rgba(185,20,80,255);
+    background-color: lightgrey;
+}
+
+.genera{
+    border: 2px solid rgba(233,145,68,255);
+}
+
+.passenger-info{
+    padding: .5em;
+    display: flex;
+    font-weight: bold;
+}
+
+
+h2{
+    font-weight: bold;
+}
+
+.passenger-spec-name{
+    width: 32%;
+    height: 130px;
+    background-color: grey;
+    padding: 1em;
+}
+
+.passenger-spec{
+    width: 20%;
+    height: 130px;
+    padding: 1em;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    white-space: nowrap;
+}
+
+#showname{
+    font-weight: bold;
+}
+
+.distance{
+    font-size: .9em;
+    margin-bottom: 2em;
+}
